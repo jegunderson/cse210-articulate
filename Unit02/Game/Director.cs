@@ -48,7 +48,7 @@ namespace Unit02.Game
         {
             Console.Write("Roll dice? [y/n] ");
             string rollDice = Console.ReadLine();
-            _isPlaying = (rollDice == "y");
+            _isPlaying = (rollDice.ToLower() == "y");
         }
 
         /// <summary>
